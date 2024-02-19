@@ -1,22 +1,17 @@
-# Target
-We are going to construct and
-plot the Nadaraya-Watson estimator using the bandwidths $h=0.5, 2.5, 5, 10$. The analysis has been done in R programming languge. 
-We have also explored the shape of density functions based on LOESS method.
+## **Learning goals:** 
+
+1.   To get introduced with Convolutional Neural Networks (CNNs).
+2.   To start working with image data.
+3.   To train and test a CNN model for a multiclass classification task with PyTorch.
 
 
-# Nadaraya-Watson Regression Estimation
+Convolutional Neural Networks (CNNs): are similar to ordinary neural networks.
+They are made up of neurons that have learnable weights and biases.
+The main difference is that CNNS mainly work on image data and apply the so called convolutional filters:
+A typical CNN archtecture looks like the following?
 
-In the context of estimating the regression function $E(Y_i | X_i = x) = m(x)$ for a set of iid pairs of random variables $(X_1, Y_1), \ldots, (X_n, Y_n)$, Nadaraya-Watson regression is employed. The estimator for $m(x)$, denoted as $\hat{m}_n(x)$, is given by:
+It has:
 
-
-$\hat{f}(x) = \frac{\displaystyle\sum_{i=1}^{n} K\left(\frac{x - X_i}{h}\right)Y_i}{\displaystyle\sum_{i=1}^{n} K\left(\frac{x - X_i}{h}\right)}$
-
-
-Here, $K$ is the kernel function, and $h$ is the bandwidth.
-
-
-
-## Usage
-
-# LOESS (Smoothing data using local regression)
-https://towardsdatascience.com/loess-373d43b03564
+Different convolutional layers.
+Optional activation fucntions followed by Pooling layers.
+lastely one or more fully connected layers
